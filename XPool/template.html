@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<style>
+			.qsect {margin-bottom:50px;}
+			.question {font-size:14px;} 
+			.control {text-align:center;margin-top:20px;margin-bottom:80px;}
+			.selected {background:rgba(255,162,24,0.3);color:blue;}
+		</style>
+		<script src="jquery-1.6.4.js"></script>
+		<script>
+			$(function(){
+				$(document).delegate("[type='checkbox']", "change", function() {
+				   //$(this).toggleClass("selected");
+					$(this).parents("li").first().toggleClass("selected");
+				});
+			});
+			
+			Arti2D={};
+			Arti2D.ShowQuest = function(content) {
+				content = content || "N/A";
+				//var questDiv = document.getElementById("question");
+				//questDiv.innerHTML = content;
+				var questDiv = $("#question");
+				$(questDiv).html(content);
+			};
+			Arti2D.AddAnswer = function(content) {
+				//var questDiv = document.getElementById("answer");
+				content = content || "N/A";
+				var answerDiv = $("#answer");
+				$(answerDiv).html(content);				
+			};
+		</script>
+	</head>
+	<body>
+		<div id="qsect" class="qsect">
+			<h3 id="qnum">Question 1</h3>
+			<div id="question" class="question">
+				<img src="test.png" style="width:280px;"/>
+				<p>
+				Question DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion
+				</p>
+				<p>
+				Question DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion
+				</p>
+				<p>
+				Question DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion
+				</p>
+				<p>
+				Question DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion
+				</p>
+				<p>
+				Question DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion DetailQuestion
+				</p>
+			</div>
+		</div>
+		
+	</body>
+</html>
