@@ -52,6 +52,9 @@
 		1B2B186716CA77BD00411416 /* search_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B2B185316CA77BD00411416 /* search_text.png */; };
 		1B2B186816CA77BD00411416 /* search_text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B2B185416CA77BD00411416 /* search_text@2x.png */; };
 		1B2B186A16CA781000411416 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2B186916CA781000411416 /* MessageUI.framework */; };
+		EF23BEE316D18E0D007AAC69 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF23BEE216D18E0D007AAC69 /* libsqlite3.dylib */; };
+		EF23BEE616D19704007AAC69 /* QuestionList.m in Sources */ = {isa = PBXBuildFile; fileRef = EF23BEE516D19704007AAC69 /* QuestionList.m */; };
+		EF23BEE916D1973C007AAC69 /* QuestionDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EF23BEE816D1973C007AAC69 /* QuestionDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +117,11 @@
 		1B2B185316CA77BD00411416 /* search_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_text.png; sourceTree = "<group>"; };
 		1B2B185416CA77BD00411416 /* search_text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_text@2x.png"; sourceTree = "<group>"; };
 		1B2B186916CA781000411416 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EF23BEE216D18E0D007AAC69 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EF23BEE416D19704007AAC69 /* QuestionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionList.h; sourceTree = "<group>"; };
+		EF23BEE516D19704007AAC69 /* QuestionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionList.m; sourceTree = "<group>"; };
+		EF23BEE716D1973C007AAC69 /* QuestionDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDAO.h; sourceTree = "<group>"; };
+		EF23BEE816D1973C007AAC69 /* QuestionDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF23BEE316D18E0D007AAC69 /* libsqlite3.dylib in Frameworks */,
 				1B2B186A16CA781000411416 /* MessageUI.framework in Frameworks */,
 				1B2B17F916CA767600411416 /* UIKit.framework in Frameworks */,
 				1B2B17FB16CA767600411416 /* Foundation.framework in Frameworks */,
@@ -134,6 +143,7 @@
 		1B2B17E916CA767600411416 = {
 			isa = PBXGroup;
 			children = (
+				EF23BEE216D18E0D007AAC69 /* libsqlite3.dylib */,
 				1B2B186916CA781000411416 /* MessageUI.framework */,
 				1B2B17FE16CA767600411416 /* XPool */,
 				1B2B17F716CA767600411416 /* Frameworks */,
@@ -189,6 +199,10 @@
 				1B2B181616CA767600411416 /* Arti2DViewController.h */,
 				1B2B181716CA767600411416 /* Arti2DViewController.m */,
 				1B2B17FF16CA767600411416 /* Supporting Files */,
+				EF23BEE416D19704007AAC69 /* QuestionList.h */,
+				EF23BEE516D19704007AAC69 /* QuestionList.m */,
+				EF23BEE716D1973C007AAC69 /* QuestionDAO.h */,
+				EF23BEE816D1973C007AAC69 /* QuestionDAO.m */,
 			);
 			path = XPool;
 			sourceTree = "<group>";
@@ -347,6 +361,8 @@
 				1B2B183716CA775400411416 /* Flickr.m in Sources */,
 				1B2B183816CA775400411416 /* FlickrPhoto.m in Sources */,
 				1B2B183D16CA778A00411416 /* jquery-1.6.4.js in Sources */,
+				EF23BEE616D19704007AAC69 /* QuestionList.m in Sources */,
+				EF23BEE916D1973C007AAC69 /* QuestionDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +489,7 @@
 				1B2B181D16CA767600411416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
